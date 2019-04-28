@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bbs.dao.AdminDAO">
+<!-- 插入用户信息数据 -->
+ <insert id="insertAdmin" parameterType="Admin">
+ insert into tb_admin(adminName,adminPass) values(#{adminName},#{adminPass})
+ </insert>
+  <insert id="insertAdmin2" parameterType="Admin">
+  insert into tb_admin(adminName,adminPass) values(#{adminName},#{adminPass})
+ </insert>
+ 
+</mapper>
